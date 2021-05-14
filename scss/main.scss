@@ -1,0 +1,9 @@
+ @use 'abstracts' as a;
+ @import url(a.$Family-Overpass);
+ @import url(a.$Family-Ubuntu);
+
+
+ body{
+    font-family: Overpass,Ubuntu;
+    font-size: a.$Font-size;
+}
