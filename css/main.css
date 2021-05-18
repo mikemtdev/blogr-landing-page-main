@@ -1,8 +1,22 @@
 @import url("https://fonts.google.com/specimen/Overpass?preview.text_type=custom");
 @import url("https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom");
+@import url("https://fonts.google.com/specimen/Overpass?preview.text_type=custom");
+@import url("https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Overpass", sans-serif;
+}
+
 body {
-  font-family: Overpass, Ubuntu;
   font-size: 16px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

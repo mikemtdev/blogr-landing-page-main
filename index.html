@@ -7,7 +7,6 @@
       content="width=device-width, initial-scale=1.0"
     />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -27,6 +26,7 @@
     </title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
     <style>
       .attribution {
         font-size: 11px;
@@ -38,8 +38,17 @@
     </style>
   </head>
   <body>
-    <section>
-      <nav>
+    <nav class="nav">
+      <section class="moblie">
+        <span class="nav_logo_menu">
+          <img
+            src="/images/logo.svg"
+            alt="logo" />
+
+          <img
+            src="/images/icon-hamburger.svg"
+            alt="menu"
+        /></span>
         <ul>
           <li>
             Product
@@ -78,100 +87,143 @@
         </ul>
 
         <!-- Company About Team Blog Careers -->
-      </nav>
+      </section>
+    </nav>
+    <section class="hero_view">
+      <div class="hero_view_text">
+        <div class="hero_view_font">
+          <div class="">
+            <h1>
+              A modern
+              <div class="">
+                publishing platform
+              </div>
+            </h1>
+          </div>
+          <div class="hero_view_font_p">
+            <p>
+              Grow your audience and
+              build your online brand
+            </p>
+          </div>
+        </div>
+        <div class="hero_view_buttons">
+          <button
+            class="
+              button_common
+              start_for_free
+            "
+          >
+            Start for Free
+          </button>
+          <button
+            class="
+              button_common
+              learn_more
+            "
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <section
+        class="intro_pattern_section"
+      >
+        <img
+          src="/images/bg-pattern-intro.svg"
+          alt="pattern"
+        />
+      </section>
     </section>
-    <section class="hero-view">
-      <h1>
-        A modern publishing platform
-      </h1>
+
+    <section
+      class="
+        designed_for_the_future
+        common_font
+      "
+    >
+      <h2>Designed for the future</h2>
+
+      <img
+        src="/images/illustration-editor-mobile.svg"
+        alt="editor"
+      />
+      <h3>
+        Introducing an extensible editor
+      </h3>
       <p>
-        Grow your audience and build
-        your online brand
+        Blogr features an exceedingly
+        intuitive interface which lets
+        you focus on one thing: creating
+        content. The editor supports
+        management of multiple blogs and
+        allows easy manipulation of
+        embeds such as images, videos,
+        and Markdown. Extensibility with
+        plugins and themes provide easy
+        ways to add functionality or
+        change the looks of a blog.
       </p>
-      <button>Start for Free</button>
-      <button>Learn More</button>
+
+      <h3>Robust content management</h3>
+      <p>
+        Flexible content management
+        enables users to easily move
+        through posts. Increase the
+        usability of your blog by adding
+        customized categories, sections,
+        format, or flow. With this
+        functionality, you’re in full
+        control.
+      </p>
+      <img
+        src="/images/illustration-phones.svg"
+        alt=""
+      />
+      <h3>
+        State of the Art Infrastructure
+      </h3>
+      <p>
+        With reliability and speed in
+        mind, worldwide data centers
+        provide the backbone for
+        ultra-fast connectivity. This
+        ensures your site will load
+        instantly, no matter where your
+        readers are, keeping your site
+        competitive.
+      </p>
+
+      <img
+        src="/images/illustration-laptop-mobile.svg"
+        alt=""
+      />
+      <h3>Free, open, simple</h3>
+      <p>
+        Blogr is a free and open source
+        application backed by a large
+        community of helpful developers.
+        It supports features such as
+        code syntax highlighting, RSS
+        feeds, social media integration,
+        third-party commenting tools,
+        and works seamlessly with Google
+        Analytics. The architecture is
+        clean and is relatively easy to
+        learn.
+      </p>
+      <h3>Powerful tooling</h3>
+
+      <p>
+        Batteries included. We built a
+        simple and straightforward CLI
+        tool that makes customization
+        and deployment a breeze, but
+        capable of producing even the
+        most complicated sites.
+      </p>
     </section>
-
-    <h2>Designed for the future</h2>
-
-    <img
-      src="/images/illustration-editor-mobile.svg"
-      alt="editor"
-    />
-    <h3>
-      Introducing an extensible editor
-    </h3>
-    <p>
-      Blogr features an exceedingly
-      intuitive interface which lets you
-      focus on one thing: creating
-      content. The editor supports
-      management of multiple blogs and
-      allows easy manipulation of embeds
-      such as images, videos, and
-      Markdown. Extensibility with
-      plugins and themes provide easy
-      ways to add functionality or
-      change the looks of a blog.
-    </p>
-
-    <h3>Robust content management</h3>
-    <p>
-      Flexible content management
-      enables users to easily move
-      through posts. Increase the
-      usability of your blog by adding
-      customized categories, sections,
-      format, or flow. With this
-      functionality, you’re in full
-      control.
-    </p>
-    <img
-      src="/images/illustration-phones.svg"
-      alt=""
-    />
-    <h3>
-      State of the Art Infrastructure
-    </h3>
-    <p>
-      With reliability and speed in
-      mind, worldwide data centers
-      provide the backbone for
-      ultra-fast connectivity. This
-      ensures your site will load
-      instantly, no matter where your
-      readers are, keeping your site
-      competitive.
-    </p>
-
-    <img
-      src="/images/illustration-laptop-mobile.svg"
-      alt=""
-    />
-    <h3>Free, open, simple</h3>
-    <p>
-      Blogr is a free and open source
-      application backed by a large
-      community of helpful developers.
-      It supports features such as code
-      syntax highlighting, RSS feeds,
-      social media integration,
-      third-party commenting tools, and
-      works seamlessly with Google
-      Analytics. The architecture is
-      clean and is relatively easy to
-      learn.
-    </p>
-    <h3>Powerful tooling</h3>
-
-    <p>
-      Batteries included. We built a
-      simple and straightforward CLI
-      tool that makes customization and
-      deployment a breeze, but capable
-      of producing even the most
-      complicated sites.
-    </p>
 
     <footer>
       <img

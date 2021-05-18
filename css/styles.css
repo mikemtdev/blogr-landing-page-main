@@ -1,3 +1,101 @@
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
 
+.nav {
+  color: white;
+  background-color: #ff3d54;
+  padding: 0rem 2.5rem;
+}
+.nav .moblie {
+  padding-top: 3rem;
+}
+.nav .nav_logo_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul {
+  display: none;
+}
+
+.hero_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 85vh;
+  color: white;
+  background-color: #ff3d54;
+  padding: 0rem 2.5rem;
+  text-align: center;
+  border-bottom-left-radius: 10rem;
+}
+.hero_view h1 {
+  font-size: 32.7px;
+}
+.hero_view .hero_view_font {
+  display: flex;
+  flex-direction: column;
+  clear: inherit;
+}
+.hero_view .hero_view_font .hero_view_font_p {
+  margin-top: 2rem;
+  font-size: 24px;
+}
+.hero_view .hero_view_buttons {
+  margin-top: 2rem;
+  display: flex;
+}
+.hero_view .hero_view_buttons .button_common {
+  padding: 1.2rem 1rem;
+  border-radius: 5rem;
+  border-color: white;
+  border: 1rem;
+  font-size: 16.8px;
+  font-weight: bold;
+}
+.hero_view .hero_view_buttons .start_for_free {
+  margin-right: 1rem;
+  color: #ff3d54;
+}
+.hero_view .hero_view_buttons .learn_more {
+  color: white;
+  background-color: transparent;
+  border-radius: 5rem;
+  border-color: white;
+  border: 2px solid white;
+}
+.hero_view .hero_view_text {
+  z-index: 2;
+}
+.hero_view .intro_pattern_section {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: -75rem;
+  top: -75rem;
+  transform: rotate(-9deg);
+}
+.hero_view .intro_pattern_section img {
+  min-width: 200rem;
+}
+
+.common_font {
+  margin: 2rem 1.5rem;
+}
+.common_font h2 {
+  font-size: 32px;
+  margin-bottom: 4rem;
+}
+.common_font h3 {
+  font-size: 28.8px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.common_font p {
+  font-weight: Ubuntu;
+  font-size: 24px;
+}
 
 /*# sourceMappingURL=styles.css.map */
