@@ -39,6 +39,99 @@
   </head>
   <body>
     <nav class="nav">
+      <section class="desktop_nav">
+        <!-- Desktop version -->
+        <nav class="desktop_nav">
+          <img
+            src="/images/logo.svg"
+            alt="logo"
+          />
+          <div
+            class="
+              nav_elements_container
+            "
+          >
+            <div class="">
+              <ul>
+                <li>
+                  <h3>
+                    Product
+                    <img
+                      src="/images/icon-arrow-dark.svg"
+                      alt="arrow"
+                    />
+                  </h3>
+                  <ul>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>
+                      Integrations
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3>
+                    Company
+                    <img
+                      src="/images/icon-arrow-dark.svg"
+                      alt="arrow"
+                    />
+                  </h3>
+                  <ul>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3>
+                    Connect
+                    <img
+                      src="/images/icon-arrow-dark.svg"
+                      alt="arrow"
+                    />
+                  </h3>
+                  <ul>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="button_container"
+            >
+              <button
+                class="
+                  button_common
+                  menu_buttons
+                  login_btn
+                "
+              >
+                Login
+              </button>
+              <div class="">
+                <button
+                  class="
+                    button_common
+                    menu_buttons
+                    signup_btn
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- mobile menu -->
       <section class="moblie">
         <span class="nav_logo_menu">
           <img
@@ -49,42 +142,82 @@
             src="/images/icon-hamburger.svg"
             alt="menu"
         /></span>
-        <ul>
-          <li>
-            Product
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-          </li>
 
-          <li>
-            Company
+        <!-- mobile menu -->
+        <section class="nav_section">
+          <ul>
+            <li>
+              <h3>
+                Product
+                <img
+                  src="/images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </h3>
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </li>
 
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-              <li>Product</li>
-            </ul>
-          </li>
+            <li>
+              <h3>
+                Company
+                <img
+                  src="/images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </h3>
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </li>
 
-          <li>
-            Connect
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </li>
-
-          <li>Login</li>
-          <li>Sign Up</li>
-        </ul>
+            <li>
+              <h3>
+                Connect
+                <img
+                  src="/images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </h3>
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+          </ul>
+          <hr />
+          <div class="button_container">
+            <button
+              class="
+                button_common
+                menu_buttons
+                login_btn
+              "
+            >
+              Login
+            </button>
+            <div class="">
+              <button
+                class="
+                  button_common
+                  menu_buttons
+                  signup_btn
+                "
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </section>
 
         <!-- Company About Team Blog Careers -->
       </section>
@@ -93,9 +226,15 @@
       <div class="hero_view_text">
         <div class="hero_view_font">
           <div class="">
-            <h1>
+            <h1 class="hide_desktop">
               A modern
               <div class="">
+                publishing platform
+              </div>
+            </h1>
+            <h1>
+              A modern
+              
                 publishing platform
               </div>
             </h1>
@@ -143,86 +282,115 @@
         common_font
       "
     >
-      <h2>Designed for the future</h2>
+      <section
+        class="
+          introducing_an_extensible_editor
+        "
+      >
+        <h2>Designed for the future</h2>
+        <img
+          src="/images/illustration-editor-mobile.svg"
+          alt="editor"
+        />
+        <h3>
+          Introducing an extensible
+          editor
+        </h3>
+        <p>
+          Blogr features an exceedingly
+          intuitive interface which lets
+          you focus on one thing:
+          creating content. The editor
+          supports management of
+          multiple blogs and allows easy
+          manipulation of embeds such as
+          images, videos, and Markdown.
+          Extensibility with plugins and
+          themes provide easy ways to
+          add functionality or change
+          the looks of a blog.
+        </p>
 
-      <img
-        src="/images/illustration-editor-mobile.svg"
-        alt="editor"
-      />
-      <h3>
-        Introducing an extensible editor
-      </h3>
-      <p>
-        Blogr features an exceedingly
-        intuitive interface which lets
-        you focus on one thing: creating
-        content. The editor supports
-        management of multiple blogs and
-        allows easy manipulation of
-        embeds such as images, videos,
-        and Markdown. Extensibility with
-        plugins and themes provide easy
-        ways to add functionality or
-        change the looks of a blog.
-      </p>
+        <h3>
+          Robust content management
+        </h3>
+        <p>
+          Flexible content management
+          enables users to easily move
+          through posts. Increase the
+          usability of your blog by
+          adding customized categories,
+          sections, format, or flow.
+          With this functionality,
+          you’re in full control.
+        </p>
+      </section>
+      <div
+        class="state_of_img_container"
+      >
+        <img
+          class="phone"
+          src="/images/illustration-phones.svg"
+          alt=""
+        />
+        <img
+          class="circle-pattern"
+          src="/images/bg-pattern-circles.svg"
+          alt="circle image"
+        />
+      </div>
+      <section class="state_of_art">
+        <h3>
+          State of the Art
+          Infrastructure
+        </h3>
+        <p>
+          With reliability and speed in
+          mind, worldwide data centers
+          provide the backbone for
+          ultra-fast connectivity. This
+          ensures your site will load
+          instantly, no matter where
+          your readers are, keeping your
+          site competitive.
+        </p>
+      </section>
 
-      <h3>Robust content management</h3>
-      <p>
-        Flexible content management
-        enables users to easily move
-        through posts. Increase the
-        usability of your blog by adding
-        customized categories, sections,
-        format, or flow. With this
-        functionality, you’re in full
-        control.
-      </p>
-      <img
-        src="/images/illustration-phones.svg"
-        alt=""
-      />
-      <h3>
-        State of the Art Infrastructure
-      </h3>
-      <p>
-        With reliability and speed in
-        mind, worldwide data centers
-        provide the backbone for
-        ultra-fast connectivity. This
-        ensures your site will load
-        instantly, no matter where your
-        readers are, keeping your site
-        competitive.
-      </p>
+      <section
+        class="
+          free_open_simple_powerful_tooling
+        "
+      >
+        <img
+          src="/images/illustration-laptop-mobile.svg"
+          alt=""
+        />
+        <h3>Free, open, simple</h3>
+        <p>
+          Blogr is a free and open
+          source application backed by a
+          large community of helpful
+          developers. It supports
+          features such as code syntax
+          highlighting, RSS feeds,
+          social media integration,
+          third-party commenting tools,
+          and works seamlessly with
+          Google Analytics. The
+          architecture is clean and is
+          relatively easy to learn.
+        </p>
+        <h3>Powerful tooling</h3>
 
-      <img
-        src="/images/illustration-laptop-mobile.svg"
-        alt=""
-      />
-      <h3>Free, open, simple</h3>
-      <p>
-        Blogr is a free and open source
-        application backed by a large
-        community of helpful developers.
-        It supports features such as
-        code syntax highlighting, RSS
-        feeds, social media integration,
-        third-party commenting tools,
-        and works seamlessly with Google
-        Analytics. The architecture is
-        clean and is relatively easy to
-        learn.
-      </p>
-      <h3>Powerful tooling</h3>
-
-      <p>
-        Batteries included. We built a
-        simple and straightforward CLI
-        tool that makes customization
-        and deployment a breeze, but
-        capable of producing even the
-        most complicated sites.
-      </p>
+        <p>
+          Batteries included. We built a
+          simple and straightforward CLI
+          tool that makes customization
+          and deployment a breeze, but
+          capable of producing even the
+          most complicated sites.
+        </p>
+      </section>
     </section>
 
     <footer>
@@ -232,21 +400,35 @@
       />
 
       <ul>
-        <li>Product</li>
-        <li>Overview</li>
-        <li>Pricing</li>
-        <li>Marketplace</li>
-        <li>Features</li>
-        <li>Integrations</li>
-        <li>Company</li>
-        <li>About</li>
-        <li>Team</li>
-        <li>Blog</li>
-        <li>Careers</li>
-        <li>Connect</li>
-        <li>Contact</li>
-        <li>Newsletter</li>
-        <li>LinkedIn</li>
+        <li>
+          <h3>Product</h3>
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Connect</h3>
+          <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </li>
       </ul>
     </footer>
 

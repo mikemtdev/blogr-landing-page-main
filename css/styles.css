@@ -3,20 +3,72 @@ img {
   max-width: 100%;
 }
 
-.nav {
+nav {
   color: white;
   background-color: #ff3d54;
   padding: 0rem 2.5rem;
 }
-.nav .moblie {
+nav .moblie {
   padding-top: 3rem;
 }
-.nav .nav_logo_menu {
+nav .nav_logo_menu {
   display: flex;
   justify-content: space-between;
 }
-.nav ul {
+nav .desktop_nav {
   display: none;
+}
+nav .nav_section {
+  display: none;
+  z-index: 1;
+  background-color: #fff;
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+nav .nav_section ul h3 {
+  margin: 1rem 0;
+}
+nav .nav_section hr {
+  margin: 2rem;
+  border: 0.05px black solid 0.5;
+}
+nav .nav_section .login_btn {
+  background-color: #fff;
+}
+nav .nav_section .menu_buttons {
+  padding: 1.2rem 4rem;
+}
+nav .nav_section .signup_btn {
+  background-color: #ff3d54;
+  color: #fff;
+}
+nav .nav_section ul {
+  color: #25252d;
+  list-style: none;
+  border-radius: 1rem;
+}
+nav .nav_section ul li h3 {
+  font-weight: 500;
+}
+nav .nav_section ul ul li {
+  opacity: 80%;
+  padding: 0.5rem;
+}
+nav .nav_section ul li > ul {
+  margin: 0 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.button_common {
+  padding: 1.2rem 1rem;
+  border-radius: 5rem;
+  border-color: white;
+  border: 1rem;
+  font-size: 16.8px;
+  font-weight: bold;
 }
 
 .hero_view {
@@ -45,15 +97,11 @@ img {
 }
 .hero_view .hero_view_buttons {
   margin-top: 2rem;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
   display: flex;
-}
-.hero_view .hero_view_buttons .button_common {
-  padding: 1.2rem 1rem;
-  border-radius: 5rem;
-  border-color: white;
-  border: 1rem;
-  font-size: 16.8px;
-  font-weight: bold;
+  padding-bottom: 3rem;
+  justify-content: space-around;
 }
 .hero_view .hero_view_buttons .start_for_free {
   margin-right: 1rem;
@@ -81,21 +129,145 @@ img {
   min-width: 200rem;
 }
 
-.common_font {
-  margin: 2rem 1.5rem;
+.designed_for_the_future .introducing_an_extensible_editor {
+  margin: 5rem 2rem 0rem 2rem;
 }
+.designed_for_the_future .free_open_simple_powerful_tooling {
+  margin: 5rem 2rem;
+}
+.designed_for_the_future .free_open_simple_powerful_tooling img {
+  width: 30rem;
+}
+.designed_for_the_future .state_of_img_container {
+  position: relative;
+  z-index: 1;
+  bottom: -10rem;
+}
+.designed_for_the_future .state_of_img_container .phone {
+  position: absolute;
+  width: 20rem;
+}
+.designed_for_the_future .state_of_img_container .circle-pattern {
+  position: relative;
+  z-index: -1;
+  object-fit: fill !important;
+  width: 7500px;
+}
+.designed_for_the_future .state_of_art {
+  background-color: #2c2d3f;
+  padding-top: 6rem;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+.designed_for_the_future .state_of_art p,
+.designed_for_the_future .state_of_art h3 {
+  margin: 5rem 2rem;
+}
+.designed_for_the_future .state_of_art p {
+  opacity: 100%;
+}
+
 .common_font h2 {
   font-size: 32px;
   margin-bottom: 4rem;
+  font-weight: 400;
 }
 .common_font h3 {
   font-size: 28.8px;
   margin-top: 4rem;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 .common_font p {
   font-weight: Ubuntu;
-  font-size: 24px;
+  line-height: 1.7;
+  opacity: 60%;
+}
+
+footer {
+  background-color: #2c2d3f;
+  color: white;
+  padding: 5rem;
+  border-top-right-radius: 5rem;
+}
+footer img {
+  margin-bottom: 3rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li h3 {
+  padding: 2rem;
+}
+footer ul ul li {
+  opacity: 80%;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1020px) {
+  .nav {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .nav .desktop_nav {
+    background-color: #ff3d54;
+    display: block;
+  }
+  .nav .desktop_nav .desktop_nav {
+    display: flex;
+  }
+  .nav .desktop_nav .desktop_nav .nav_elements_container {
+    width: 100%;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .desktop_nav .desktop_nav .login_btn {
+    background-color: #ff3d54;
+    color: #fff;
+  }
+  .nav .desktop_nav .desktop_nav .menu_buttons {
+    padding: 1.2rem 3rem;
+  }
+  .nav .desktop_nav .desktop_nav .signup_btn {
+    color: #ff3d54;
+    background-color: #fff;
+  }
+  .nav .desktop_nav .desktop_nav ul {
+    display: flex;
+    list-style: none;
+  }
+  .nav .desktop_nav .desktop_nav ul li ul {
+    display: none;
+  }
+  .nav .desktop_nav .desktop_nav hr {
+    display: none;
+  }
+  .nav .desktop_nav .desktop_nav .button_container {
+    display: flex;
+  }
+  .nav .moblie {
+    display: none;
+  }
+
+  .hide_desktop {
+    display: none;
+  }
+
+  .hero_view .hero_view_text .hero_view_font h1 {
+    font-size: 64.7px;
+    margin-bottom: 2rem;
+  }
+  .hero_view .hero_view_text .hero_view_buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

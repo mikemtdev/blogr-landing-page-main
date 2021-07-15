@@ -1,13 +1,17 @@
 @use 'abstracts' as a;
 $Padding-lr-5r: 0rem 2.5rem;
+$margin-common: 5rem 2rem;
+
 img {
   object-fit: contain;
   max-width: 100%;
 }
-.nav {
+
+nav {
   color: a.$White;
   background-color: a.$Light-red;
   padding: $Padding-lr-5r;
+  // position: relative;
   .moblie {
     padding-top: 3rem;
   }
@@ -15,9 +19,67 @@ img {
     display: flex;
     justify-content: space-between;
   }
-  ul {
+  // desktop
+  .desktop_nav {
     display: none;
   }
+  // mobile
+  .nav_section {
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+    padding: 2rem 0rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    ul h3 {
+      margin: 1rem 0;
+    }
+    hr {
+      margin: 2rem;
+      border: 0.05px black solid 0.5;
+    }
+    .login_btn {
+      background-color: #fff;
+    }
+    .menu_buttons {
+      padding: 1.2rem 4rem;
+    }
+    .signup_btn {
+      background-color: a.$Light-red;
+      color: #fff;
+    }
+    ul {
+      // display: none;
+      color: a.$Very-dark-black-blue;
+      list-style: none;
+      border-radius: 1rem;
+
+      li h3 {
+        font-weight: 500;
+      }
+      ul li {
+        opacity: 80%;
+        padding: 0.5rem;
+      }
+      li > ul {
+        margin: 0 1.5rem;
+        padding: 1.5rem;
+        border-radius: 0.3rem;
+        background-color: rgba(
+          $color: #000000,
+          $alpha: 0.04
+        );
+      }
+    }
+  }
+}
+.button_common {
+  padding: 1.2rem 1rem;
+  border-radius: 5rem;
+  border-color: white;
+  border: 1rem;
+  font-size: a.$Font-size * 1.05;
+  font-weight: bold;
 }
 
 .hero_view {
@@ -45,16 +107,12 @@ img {
   }
   .hero_view_buttons {
     margin-top: 2rem;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
     display: flex;
+    padding-bottom: 3rem;
+    justify-content: space-around;
 
-    .button_common {
-      padding: 1.2rem 1rem;
-      border-radius: 5rem;
-      border-color: white;
-      border: 1rem;
-      font-size: a.$Font-size * 1.05;
-      font-weight: bold;
-    }
     .start_for_free {
       margin-right: 1rem;
       color: a.$Light-red;
@@ -85,21 +143,159 @@ img {
   }
 }
 .designed_for_the_future {
+  .introducing_an_extensible_editor {
+    // margin: $margin-common;
+    margin: 5rem 2rem 0rem 2rem;
+  }
+  .free_open_simple_powerful_tooling {
+    margin: $margin-common;
+    // margin: 0rem 2rem;
+    img {
+      width: 30rem;
+    }
+  }
+  .state_of_img_container {
+    position: relative;
+    z-index: 1;
+    bottom: -10rem;
+    .phone {
+      position: absolute;
+      width: 20rem;
+    }
+    .circle-pattern {
+      position: relative;
+      z-index: -1;
+      object-fit: fill !important;
+      width: 7500px;
+    }
+  }
+  .state_of_art {
+    background-color: a.$Very-dark-gray-blue;
+    padding-top: 6rem;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+    p,
+    h3 {
+      margin: $margin-common;
+    }
+
+    p {
+      opacity: 100%;
+    }
+  }
 }
 .common_font {
-  margin: 2rem 1.5rem;
+  // margin: 2rem ;
   h2 {
     font-size: a.$Font-size * 2;
     margin-bottom: 4rem;
+    font-weight: 400;
   }
 
   h3 {
     font-size: a.$Font-size * 1.8;
     margin-top: 4rem;
+    font-weight: 500;
     margin-bottom: 2rem;
   }
   p {
     font-weight: Ubuntu;
-    font-size: a.$Font-size * 1.5;
+    // font-size: a.$Font-size * 1.5;
+    line-height: 1.7;
+    opacity: 60%;
+  }
+}
+footer {
+  background-color: a.$Very-dark-gray-blue;
+  color: white;
+  padding: 5rem;
+  border-top-right-radius: 5rem;
+  img {
+    margin-bottom: 3rem;
+  }
+  ul {
+    list-style: none;
+    li h3 {
+      padding: 2rem;
+    }
+    ul li {
+      opacity: 80%;
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media screen and(min-width:1020px) {
+  .nav {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    .desktop_nav {
+      background-color: a.$Light-red;
+
+      display: block;
+      .desktop_nav {
+        // margin-top: 5rem;
+        display: flex;
+        // justify-content: space-between;
+        .nav_elements_container {
+          width: 100%;
+          margin-left: 5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .login_btn {
+          background-color: a.$Light-red;
+          color: #fff;
+        }
+        .menu_buttons {
+          padding: 1.2rem 3rem;
+        }
+        .signup_btn {
+          color: a.$Light-red;
+          background-color: #fff;
+        }
+        ul {
+          display: flex;
+          list-style: none;
+
+          li ul {
+            display: none;
+          }
+        }
+        hr {
+          display: none;
+        }
+        .button_container {
+          display: flex;
+          // align-self: flex-end;
+        }
+      }
+    }
+    .moblie {
+      display: none;
+    }
+  }
+  .hide_desktop {
+    display: none;
+  }
+  .hero_view {
+    .hero_view_text {
+      .hero_view_font {
+        h1 {
+          font-size: a.$Font-size * 4+0.7;
+          margin-bottom: 2rem;
+        }
+      }
+      .hero_view_buttons {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
   }
 }
